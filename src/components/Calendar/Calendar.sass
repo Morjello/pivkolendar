@@ -1,0 +1,51 @@
+$bgcolor: #358ECF
+
+.calendar
+    background-color: $bgcolor
+    display: flex
+    flex-direction: column
+    padding: 20px
+    gap: 20px
+    border-radius: 15px
+    .calendar__container
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .calendar__month
+            @include font(30px, 500, 37px, 0)
+        .calendar__arrow-left
+            background-image: url(../../images/arrow-l.svg)
+            background-size: contain
+            background-repeat: no-repeat
+            width: 30px
+            height: 15px
+        .calendar__arrow-right
+            background-image: url(../../images/arrow-r.svg)
+            background-size: contain
+            background-repeat: no-repeat
+            width: 30px
+            height: 15px
+
+.calendar__days
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 0 20px
+    .calendar__day
+        list-style: none
+        @include font(24px, 400, 28px, 0)
+
+.calendar__table
+    display: grid
+    grid-template-columns: repeat(7, auto)
+    gap: 10px
+    .calendar__number
+        display: flex
+        align-items: center
+        justify-content: center
+        @include font(26px, 500, 35, 0)
+        width: 60px
+        height: 60px
+        border-radius: 10px
+        background-color: #fff
+        list-style: none

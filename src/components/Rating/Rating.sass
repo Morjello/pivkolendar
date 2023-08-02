@@ -1,0 +1,30 @@
+.rating
+  display: flex
+  flex-direction: column
+  gap: 70px
+  padding: 20px
+  background-color: $bgcolor
+  border-radius: 15px
+  .rating__title
+    @include font(30px, 500, 37px, 0)
+
+.rating__list
+  display: flex
+  flex-direction: column
+  gap: 10px
+  .rating__cell
+    display: flex
+    gap: 10px
+    width: 100%
+    .rating__avatar
+      min-width: 60px
+      height: 60px
+      background-image: url(../../images/ava.jpeg)
+      background-size: cover
+      background-repeat: no-repeat
+      border-radius: 30px
+    .rating__container
+      display: flex
+      flex-direction: column
+      gap: 5px
+      width: 150px
